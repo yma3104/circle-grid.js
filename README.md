@@ -5,8 +5,17 @@ function setup() {
 }
 
 function draw() {
-  background(220);
-  for (var i = 10; i < 30; i = i + 5) {
-    ellipse(i, 20, 30, );
+  background(0);
+ 
+  var x = 0;
+	while (x <= width) {
+    ellipse(x, 200, 25, 25);
+		x = x + 50;
+  }
+	
+	for (var x = 0; x <= width; x = x + 50) {
+		for (var y = 0; y <= height; y = y + 50) {
+		  ellipse(x, y, 25, 25);
+	  }
   }
 }
